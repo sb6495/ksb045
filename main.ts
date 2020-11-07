@@ -26,7 +26,7 @@ basic.forever(function () {
             . . # . .
             `)
     }
-    if (KSB045.getJoystickValue(KSB045.valueType.X) > 250 && KSB045.getJoystickValue(KSB045.valueType.X) > 450) {
+    if (KSB045.getJoystickValue(KSB045.valueType.X) > 250 && KSB045.getJoystickValue(KSB045.valueType.X) <= 450) {
         radio.sendNumber(2)
         basic.showLeds(`
             . . # . .
@@ -36,7 +36,7 @@ basic.forever(function () {
             . . # . .
             `)
     }
-    if (KSB045.getJoystickValue(KSB045.valueType.X) > 550 && KSB045.getJoystickValue(KSB045.valueType.X) > 750) {
+    if (KSB045.getJoystickValue(KSB045.valueType.X) > 550 && KSB045.getJoystickValue(KSB045.valueType.X) <= 750) {
         radio.sendNumber(3)
         basic.showLeds(`
             . . # . .
@@ -46,7 +46,7 @@ basic.forever(function () {
             . . # . .
             `)
     }
-    if (KSB045.getJoystickValue(KSB045.valueType.X) <= 750) {
+    if (KSB045.getJoystickValue(KSB045.valueType.X) > 750) {
         radio.sendNumber(4)
         basic.showLeds(`
             . . # . .
@@ -68,7 +68,7 @@ basic.forever(function () {
             . . # . .
             `)
     }
-    if (KSB045.getJoystickValue(KSB045.valueType.Y) > 250 && KSB045.getJoystickValue(KSB045.valueType.Y) > 450) {
+    if (KSB045.getJoystickValue(KSB045.valueType.Y) > 250 && KSB045.getJoystickValue(KSB045.valueType.Y) <= 450) {
         radio.sendNumber(6)
         basic.showLeds(`
             . . # . .
@@ -78,7 +78,7 @@ basic.forever(function () {
             . . # . .
             `)
     }
-    if (KSB045.getJoystickValue(KSB045.valueType.Y) > 550 && KSB045.getJoystickValue(KSB045.valueType.Y) > 750) {
+    if (KSB045.getJoystickValue(KSB045.valueType.Y) > 550 && KSB045.getJoystickValue(KSB045.valueType.Y) <= 750) {
         radio.sendNumber(7)
         basic.showLeds(`
             . . # . .
@@ -88,7 +88,7 @@ basic.forever(function () {
             . . # . .
             `)
     }
-    if (KSB045.getJoystickValue(KSB045.valueType.Y) <= 750) {
+    if (KSB045.getJoystickValue(KSB045.valueType.Y) > 750) {
         radio.sendNumber(8)
         basic.showLeds(`
             . . # . .
